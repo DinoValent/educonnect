@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ChevronRight, Book, Users, Briefcase } from "lucide-react";
+import logo from "../public/image.png";
 
 export default function HomePage() {
   return (
@@ -9,11 +10,7 @@ export default function HomePage() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <img
-            src="./crea_un_logo_para_mi_emprendimiento_el.jpeg" // Ruta al archivo del logo en la carpeta public
-            alt="EduConnect Logo"
-            className="logo"
-          />
+          <img src={logo} alt="EduConnect Logo" className="logo" />
           <nav className="nav">
             <a href="#cursos" className="nav-link">
               Cursos
