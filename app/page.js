@@ -19,7 +19,6 @@ export default function HomePage() {
             height={60}
             priority
           />{" "}
-          <h1>EduConnect</h1>
           <nav className="nav">
             <a href="#cursos" className="nav-link">
               Cursos
