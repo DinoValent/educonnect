@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.1.0",
+    "@fontsource/roboto": "^5.1.0",
+    "educonnect": "file:",
+    "lucide-react": "^0.454.0",
+    "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
     "eslint": "^8",
