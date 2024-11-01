@@ -202,3 +202,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.logo-small {
+  margin: 0 10px; /* Controla el espacio alrededor del logo */
+}

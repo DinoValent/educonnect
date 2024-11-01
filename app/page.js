@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { ChevronRight, Book, Users, Briefcase } from "lucide-react";
 import logo from "../public/image.png";
 
@@ -10,7 +11,15 @@ export default function HomePage() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <img src={logo} alt="EduConnect Logo" className="logo" />
+          <Image
+            src={logo}
+            alt="EduConnect Logo"
+            className="logo-small" // Nueva clase para controlar el tamaño
+            width={60} // Tamaño reducido
+            height={60}
+            priority
+          />{" "}
+          <h1>EduConnect</h1>
           <nav className="nav">
             <a href="#cursos" className="nav-link">
               Cursos
@@ -20,6 +29,12 @@ export default function HomePage() {
             </a>
             <a href="#empleo" className="nav-link">
               Empleo
+            </a>
+            <a href="#testimonios" className="nav-link">
+              Testimonios
+            </a>
+            <a href="#contacto" className="nav-link">
+              Contacto
             </a>
           </nav>
         </div>
@@ -50,7 +65,6 @@ export default function HomePage() {
       {/* Features Grid */}
       <div className="features">
         <div className="features-grid">
-          {/* Cursos Section */}
           <section id="cursos" className="feature-card">
             <Book className="feature-icon" />
             <h3 className="feature-title">Cursos en Línea</h3>
@@ -60,7 +74,6 @@ export default function HomePage() {
             </p>
           </section>
 
-          {/* Mentoría Section */}
           <section id="mentoria" className="feature-card">
             <Users className="feature-icon" />
             <h3 className="feature-title">Sistema de Mentoría Virtual</h3>
@@ -70,7 +83,6 @@ export default function HomePage() {
             </p>
           </section>
 
-          {/* Empleo Section */}
           <section id="empleo" className="feature-card">
             <Briefcase className="feature-icon" />
             <h3 className="feature-title">Sección de Empleo</h3>
@@ -81,13 +93,6 @@ export default function HomePage() {
           </section>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p className="footer-text">
-          &copy; 2024 EduConnect. Todos los derechos reservados.
-        </p>
-      </footer>
     </div>
   );
 }
